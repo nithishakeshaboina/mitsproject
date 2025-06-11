@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MITS - Micro Information Technology Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .sticky-banner {
+      position: sticky;
+      top: 10px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Sticky Internship Banner -->
+  <div class="sticky-banner bg-blue-600 text-white px-4 py-2 text-center rounded-md w-fit mt-4 ml-4 shadow-lg">
+    <a href="#internship" class="font-semibold hover:underline">🚀 Apply for Internship</a>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50" id="sidebar">
+    <div class="p-4 border-b text-xl font-bold">MITS Menu</div>
+    <ul class="p-4 space-y-4">
+      <li><a href="#internship" class="hover:text-blue-600">Internship Application</a></li>
+      <li><a href="#offer" class="hover:text-blue-600">Offer Letter</a></li>
+      <li><a href="#certificate" class="hover:text-blue-600">Certificate Verification</a></li>
+      <li><a href="#team" class="hover:text-blue-600">Join the Team</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact Info</a></li>
+    </ul>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <button onclick="toggleSidebar()" class="fixed top-4 left-4 z-50 bg-blue-500 text-white p-2 rounded-md shadow-lg">
+    ☰
+  </button>
+
+  <!-- Main Content -->
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold text-center mb-4">Micro Information Technology Services (MITS)</h1>
+    <p class="text-center max-w-3xl mx-auto mb-10">
+      Our mission is to empower students with real-world IT experience through innovative internships, strong university collaborations, and career-building opportunities.
+    </p>
+
+    <!-- University Logos -->
+    <h2 class="text-2xl font-semibold mb-4">Partnered Universities</h2>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/1200px-Indian_Institute_of_Technology_Delhi_Logo.svg.png" alt="IIT Delhi" class="rounded shadow h-20 object-contain" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/National_Institute_of_Technology%2C_Warangal_logo.png" alt="NIT Warangal" class="rounded shadow h-20 object-contain" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/KITSW_OfficiaLogo.png" alt="KITS Warangal" class="rounded shadow h-20 object-contain" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Osmania_University_Logo.png" alt="Osmania University" class="rounded shadow h-20 object-contain" />
+      <img src="https://logowik.com/content/uploads/images/anna-university3770.jpg" alt="Anna University" class="rounded shadow h-20 object-contain" />
+      <img src="https://logowik.com/content/uploads/images/amity-university9126.jpg" alt="Amity University" class="rounded shadow h-20 object-contain" />
+      <img src="https://media.licdn.com/dms/image/v2/C510BAQH66KkTTZFJ2A/company-logo_200_200/company-logo_200_200/0/1630615963889/manipal_institute_of_technology_logo?e=2147483647&v=beta&t=bgHgQHIJWL5DZfBMMH4-w4CKd-NKrUVcuJUkreDAWyo" alt="Manipal Institute of Technology" class="rounded shadow h-20 object-contain" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUoko4aGH9-9mtvI8DS5KYIiDSXtUm9QiN5g&s" alt="SRM University" class="rounded shadow h-20 object-contain" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png" alt="VIT Vellore" class="rounded shadow h-20 object-contain" />
+    </div>
+
+    <!-- Social Stats -->
+    <h2 class="text-2xl font-semibold mb-4">Our Reach</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold">🌐 Network Size</h3>
+        <p class="text-3xl mt-2 font-semibold">10,000+</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold">👥 Followers</h3>
+        <p class="text-3xl mt-2 font-semibold">25,000+</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold">🎓 Student Interns</h3>
+        <p class="text-3xl mt-2 font-semibold">3,500+</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("-translate-x-full");
+    }
+  </script>
+
+</body>
+</html>
